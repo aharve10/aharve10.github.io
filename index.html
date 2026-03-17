@@ -143,13 +143,31 @@
   }
 
   .nav-links a::before {
-    content: '~/';
-    color: var(--text-muted);
-    font-size: 0.75rem;
+    content: '';
   }
 
   .nav-links a:hover {
     color: var(--accent);
+  }
+
+  .nav-links a.resume-btn {
+    color: var(--bg-primary);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .nav-links a.resume-btn::before {
+    content: '';
+  }
+
+  .nav-links a.resume-btn:hover {
+    background: var(--accent-dim);
+    border-color: var(--accent-dim);
+    color: #ffffff;
   }
 
   /* ========== HERO ========== */
@@ -689,9 +707,10 @@
   <div class="container">
     <div class="nav-logo">andrew<span class="cursor"></span></div>
     <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Andrew_Harvey_Resume.pdf" class="resume-btn" download>Resume</a></li>
     </ul>
   </div>
 </nav>
